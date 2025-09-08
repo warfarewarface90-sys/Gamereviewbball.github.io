@@ -549,7 +549,7 @@
             `).join('');
         }
 
-        
+        // Update achievements
         function updateAchievements() {
             const container = document.getElementById('achievements');
             
@@ -722,7 +722,7 @@
             `).join('');
         }
 
-     
+        // Delete game function
         function deleteGame(gameId) {
             if (confirm('Are you sure you want to delete this game? This cannot be undone.')) {
                 games = games.filter(game => game.id !== gameId);
@@ -738,7 +738,7 @@
             }
         }
 
-        
+        // Schedule functions
         function updateScheduleDisplay() {
             for (let i = 0; i < 7; i++) {
                 const dayElement = document.getElementById(`day-${i}`);
